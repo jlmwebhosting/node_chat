@@ -120,7 +120,7 @@ setInterval(function () {
   }
 }, 1000);
 
-fu.listen(Number(process.env.PORT || PORT), HOST);
+fu.listen(process.env.PORT || PORT, HOST);
 
 fu.get("/", fu.staticHandler("index.html"));
 fu.get("/style.css", fu.staticHandler("style.css"));
